@@ -32,6 +32,18 @@ Imported JSON can be an array of messages or an object with a `messages` array. 
 - Node backend API at `/api/search?q=...`; the browser sends live searches to the server
 - JSON chat import through the UI or `POST /api/import`; imported corpora can be selected before searching
 
+## What is mocked
+
+- The chat corpus is synthetic; no real WhatsApp, Telegram, or private chat export is included.
+- Retrieval uses an inspectable heuristic ranker instead of a hosted embedding model or vector database.
+- Imported chats are held in server memory and reset when the local Node process restarts.
+- The local Node server is the complete backend for this demo; there is no external production service dependency.
+
+## Repository checklist
+
+- Public repository with setup and test commands documented above.
+- Incremental commits preserve the build history: initial search, JSON import, and sample upload files.
+
 ## Current result
 
 The local benchmark currently reports:
