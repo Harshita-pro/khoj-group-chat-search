@@ -1,0 +1,11 @@
+{
+  "name": "group-chat-semantic-search",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synthetic Hinglish group chat with intent-aware semantic search",
+  "scripts": {
+    "start": "node server.js",
+    "generate": "node scripts/generate-corpus.js",
+    "test": "node scripts/evaluate.js"
+  }
+}

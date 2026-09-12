@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khoj / group chat search</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="/">khoj<span>.</span></a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a class="active" href="#search-area">Search</a>
+        <a href="#evaluation">Benchmark</a>
+        <span class="nav-divider"></span>
+        <span class="nav-label">Seed 19-42-07</span>
+      </nav>
+      <div class="corpus-status"><i></i><span>synthetic corpus</span><strong>4,000 messages</strong></div>
+    </header>
+    <main>
+      <section class="hero" id="search-area">
+        <p class="eyebrow">GROUP CHAT / MEANING-FIRST SEARCH</p>
+        <h1>Find the moment<br /><em>you meant.</em></h1>
+        <p class="lede">Search six months of messy Hinglish conversation by intent, not exact wording.</p>
+        <form class="searchbar" id="search-form">
+          <span class="search-icon">⌕</span>
+          <input id="query" autocomplete="off" placeholder="e.g. when did we decide on the trip?" />
+          <button type="submit">Search <span>↵</span></button>
+        </form>
+        <div class="suggestions" id="suggestions">
+          <button data-query="When did we decide on the trip?">When did we decide on the trip?</button>
+          <button data-query="What did Priya say about the budget?">What did Priya say about the budget?</button>
+          <button data-query="What did we discuss last month?">What did we discuss last month?</button>
+        </div>
+      </section>
+
+      <section class="workspace" id="results-panel" hidden>
+        <div class="result-head">
+          <div><p class="eyebrow">SEARCH RESULTS</p><h2 id="result-title">Matches</h2></div>
+          <div class="mode-pill"><span id="mode-dot"></span><span id="mode-label">semantic + context</span></div>
+        </div>
+        <div class="insight-strip" id="insight-strip"></div>
+        <div class="results-layout">
+          <div class="results" id="results"></div>
+          <aside class="context-panel">
+            <p class="eyebrow">WHY THIS WORKS</p>
+            <h3 id="explanation-title">Search the conversation, not the keyword.</h3>
+            <p id="explanation">Khoj reads the shape of your question, then ranks meaning, people, dates, and nearby messages together.</p>
+            <div class="signal-list">
+              <div><span class="signal-key semantic"></span><span>meaning signal</span></div>
+              <div><span class="signal-key person"></span><span>person signal</span></div>
+              <div><span class="signal-key time"></span><span>time signal</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="evaluation" id="evaluation">
+        <div><p class="eyebrow">BENCHMARK / SEED: 19-42-07</p><h2>Does it actually find the thing?</h2></div>
+        <p class="eval-copy">40 questions. Three decisions. Eight deliberately unfair ones where the answer shares <strong>zero words</strong> with the query.</p>
+        <div class="metrics" id="metrics">
+          <div class="metric"><strong id="all-accuracy">—</strong><span>all queries</span></div>
+          <div class="metric hard"><strong id="hard-accuracy">—</strong><span>zero-overlap</span></div>
+          <div class="metric"><strong>4k</strong><span>messages indexed</span></div>
+        </div>
+        <div class="benchmark-note" id="benchmark-note"></div>
+      </section>
+    </main>
+    <footer><span>khoj / a small experiment in remembering together</span><span>synthetic by design · private by default</span></footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
