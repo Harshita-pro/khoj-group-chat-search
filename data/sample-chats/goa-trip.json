@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "id": "goa-001",
+      "sender": "Riya",
+      "timestamp": "2026-01-10T12:00:00Z",
+      "text": "Goa trip ka final plan yahi hai, 18 April ko nikalte hain."
+    },
+    {
+      "id": "goa-002",
+      "sender": "Kabir",
+      "timestamp": "2026-01-10T12:04:00Z",
+      "text": "Stay book ho gaya, Saturday morning beach ke paas milna."
+    },
+    {
+      "id": "goa-003",
+      "sender": "Meera",
+      "timestamp": "2026-01-10T12:08:00Z",
+      "text": "Perfect, main train tickets dekh leti hoon."
+    }
+  ]
+}

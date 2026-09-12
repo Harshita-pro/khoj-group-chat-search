@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "id": "birthday-001",
+      "sender": "Ananya",
+      "timestamp": "2026-02-03T18:30:00Z",
+      "text": "Birthday dinner Friday ko Olive Cafe mein final hai."
+    },
+    {
+      "id": "birthday-002",
+      "sender": "Dev",
+      "timestamp": "2026-02-03T18:35:00Z",
+      "text": "Cake main pick kar lunga, budget 1200 ke andar rakhenge."
+    },
+    {
+      "id": "birthday-003",
+      "sender": "Priya",
+      "timestamp": "2026-02-03T18:42:00Z",
+      "text": "Done, guests ko invite bhej diya hai."
+    }
+  ]
+}

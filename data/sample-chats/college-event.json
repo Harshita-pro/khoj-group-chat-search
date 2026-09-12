@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "id": "event-001",
+      "sender": "Aarav",
+      "timestamp": "2026-03-15T09:10:00Z",
+      "text": "College fest ka venue Auditorium B confirm ho gaya."
+    },
+    {
+      "id": "event-002",
+      "sender": "Ishita",
+      "timestamp": "2026-03-15T09:18:00Z",
+      "text": "Sound check Thursday 4 pm par hoga, everyone please be there."
+    },
+    {
+      "id": "event-003",
+      "sender": "Rohan",
+      "timestamp": "2026-03-15T09:25:00Z",
+      "text": "Poster ka final version aaj shaam share kar dunga."
+    }
+  ]
+}
