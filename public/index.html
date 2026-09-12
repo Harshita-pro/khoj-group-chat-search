@@ -28,6 +28,12 @@
           <input id="query" autocomplete="off" placeholder="e.g. when did we decide on the trip?" />
           <button type="submit">Search <span>↵</span></button>
         </form>
+            <div class="import-row">
+              <label class="import-button" for="chat-file">+ Import chat JSON</label>
+              <input id="chat-file" type="file" accept=".json,application/json" hidden />
+              <select id="corpus-select" aria-label="Choose chat corpus"><option value="synthetic">Synthetic demo chat</option></select>
+              <span class="import-status" id="import-status">Your imported chat stays local to this server.</span>
+            </div>
         <div class="suggestions" id="suggestions">
           <button data-query="When did we decide on the trip?">When did we decide on the trip?</button>
           <button data-query="What did Priya say about the budget?">What did Priya say about the budget?</button>

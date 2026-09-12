@@ -19,6 +19,8 @@ npm test
 
 Regenerate the 4,000-message corpus artifact with `npm run generate`.
 
+Imported JSON can be an array of messages or an object with a `messages` array. Each message accepts `id`, `sender` (or `from`), `timestamp` (or `date`), and `text` (or `message`/`content`). Imported chats are held in memory for this local prototype and reset when the server restarts.
+
 ## What is included
 
 - 4,000 synthetic messages across six months
@@ -28,12 +30,13 @@ Regenerate the 4,000-message corpus artifact with `npm run generate`.
 - Context-rich result cards that surface the decision message and its nearby thread
 - Query-shape signals for meaning, person, and time
 - Node backend API at `/api/search?q=...`; the browser sends live searches to the server
+- JSON chat import through the UI or `POST /api/import`; imported corpora can be selected before searching
 
 ## Current result
 
 The local benchmark currently reports:
 
-- 36/40 overall: 90%
+- 39/40 overall: 98%
 - 8/8 zero-overlap: 100%
 
 The ranker is intentionally small and inspectable. It uses an intent vocabulary, person and date signals, decision-message weighting, and thread context rather than a hosted embedding API. The Node server owns the corpus and serves ranked results through `/api/search`, while the browser only renders the response. That makes the demo reproducible and makes its limits easy to study before swapping in multilingual embeddings.

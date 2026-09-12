@@ -1,3 +1,8 @@
+.import-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:24px; }
+.import-button, #corpus-select { border:1px solid #b8c9ba; border-radius:6px; background:#fff; color:var(--ink); padding:9px 11px; font:10px 'DM Mono',monospace; cursor:pointer; }
+.import-button:hover { border-color:var(--teal); background:#e7f5df; }
+#corpus-select { outline:none; min-width:165px; }
+.import-status { color:#829188; font:10px 'DM Mono',monospace; }
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 :root { --ink:#17211f; --muted:#71807b; --paper:#f4f1e9; --card:#fbfaf6; --lime:#c9ef71; --coral:#fb8064; --line:#d9ded2; --teal:#2f7770; }
 * { box-sizing:border-box; }
